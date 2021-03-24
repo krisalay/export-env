@@ -1,0 +1,12 @@
+name: 'Export ENV'
+description: 'Exports the environment variables from .env file as the github environment variables'
+inputs:
+  filename:
+    description: 'Name of the file'
+    required: true
+    default: .env
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.filename }}
