@@ -1,5 +1,7 @@
-name: 'Export ENV'
+name: 'export-env'
+author: 'Krisalay'
 description: 'Exports the environment variables from .env file as the github environment variables'
+
 inputs:
   filename:
     description: 'Name of the file'
@@ -10,3 +12,6 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.filename }}
+branding:
+  icon: terminal
+  color: green
