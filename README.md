@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Check Out Source Code
         uses: actions/checkout@v2
-      - name: expor env
+      - name: export env
         uses: krisalay/export-env@v1.0.0
         with:
           filename: .env
